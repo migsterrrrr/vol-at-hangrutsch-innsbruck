@@ -336,6 +336,152 @@
     font-weight: 700;
   }
 
+  /* === COMMENT SECTION === */
+  .comments-section {
+    margin-top: 40px;
+    padding-top: 24px;
+    border-top: 1px solid #eee;
+  }
+  .comments-section h3 {
+    font-family: 'Public Sans', Arial, sans-serif;
+    font-size: 28px;
+    font-weight: 900;
+    margin-bottom: 20px;
+  }
+  .comments-list {
+    background: #f7f7f5;
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+  .comment {
+    padding: 16px 0;
+    border-bottom: 1px solid #e8e8e6;
+  }
+  .comment:last-child {
+    border-bottom: none;
+  }
+  .comment-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 10px;
+  }
+  .comment-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+  }
+  .comment-avatar-placeholder {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+  }
+  .comment-user-info {
+    display: flex;
+    flex-direction: column;
+  }
+  .comment-username {
+    font-size: 14px;
+    font-weight: 700;
+    color: #1a1603;
+  }
+  .comment-time {
+    font-size: 12px;
+    color: #979797;
+  }
+  .comment-dots {
+    margin-left: auto;
+    font-size: 18px;
+    color: #979797;
+    cursor: pointer;
+  }
+  .comment-body {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #1a1603;
+    margin-left: 52px;
+  }
+  .comment-actions {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 10px;
+    margin-left: 52px;
+    font-size: 13px;
+    color: #979797;
+  }
+  .comment-actions a {
+    color: #979797;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  .comment-actions .vote-btn {
+    background: none;
+    border: none;
+    color: #979797;
+    font-size: 13px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    padding: 0;
+  }
+  .comment-reply-btn {
+    font-size: 13px;
+    color: #979797;
+  }
+  .comments-blurred {
+    position: relative;
+  }
+  .comments-blurred .comment.blurred {
+    filter: blur(4px);
+    user-select: none;
+    pointer-events: none;
+  }
+  .login-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    border-radius: 12px;
+    padding: 24px 32px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+    text-align: center;
+    z-index: 10;
+  }
+  .login-overlay p {
+    font-size: 16px !important;
+    font-weight: 500;
+    margin: 0 0 16px 0 !important;
+    color: #1a1603;
+  }
+  .login-overlay .login-btn {
+    background: #ffd200;
+    color: #1a1603;
+    border: 2px solid #ffd200;
+    border-radius: 4px;
+    padding: 12px 32px;
+    font-family: 'Inter', Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+  }
+
   /* === RELATED === */
   .related {
     margin-top: 40px;
@@ -498,6 +644,106 @@
       <button class="emoji-btn">😢</button>
       <button class="emoji-btn">🤔</button>
       <button class="emoji-btn">😮</button>
+    </div>
+  </div>
+
+  <!-- COMMENTS -->
+  <div class="comments-section">
+    <h3>83 Kommentare</h3>
+    <div class="comments-list">
+      <!-- MICHAEL'S COMMENT (visible) -->
+      <div class="comment">
+        <div class="comment-header">
+          <img class="comment-avatar" src="michael.jpg" alt="Michael Riedler">
+          <div class="comment-user-info">
+            <span class="comment-username">Michael Riedler</span>
+            <span class="comment-time">Vor 1 Stunde</span>
+          </div>
+          <span class="comment-dots">⋮</span>
+        </div>
+        <div class="comment-body">
+          Echt schade, hon mi scho gfreut uf Moment wia diese. So schlimm ka der Hangrutsch amol net si oder? 😔
+        </div>
+        <div class="comment-actions">
+          <a href="#" class="comment-reply-btn">💬 Antwort verfassen</a>
+          <span style="margin-left: auto; display: flex; gap: 12px;">
+            <button class="vote-btn">👍 2</button>
+            <button class="vote-btn">👎 0</button>
+          </span>
+        </div>
+      </div>
+
+      <!-- OTHER COMMENTS (blurred) -->
+      <div class="comments-blurred">
+        <div class="comment blurred">
+          <div class="comment-header">
+            <div class="comment-avatar-placeholder" style="background: #8b5cf6;">H</div>
+            <div class="comment-user-info">
+              <span class="comment-username">Heidrun_B</span>
+              <span class="comment-time">Vor 45 Minuten</span>
+            </div>
+            <span class="comment-dots">⋮</span>
+          </div>
+          <div class="comment-body">
+            Des isch jo a Wahnsinn! Mir hond am Donnerstag an Flug buacht ghet. Wia lang soll des no dura? Kennt sich öpper us wega Entschädigung bi easyJet?
+          </div>
+          <div class="comment-actions">
+            <a href="#" class="comment-reply-btn">💬 Antwort verfassen</a>
+            <span style="margin-left: auto; display: flex; gap: 12px;">
+              <button class="vote-btn">👍 5</button>
+              <button class="vote-btn">👎 0</button>
+            </span>
+          </div>
+        </div>
+
+        <div class="comment blurred">
+          <div class="comment-header">
+            <div class="comment-avatar-placeholder" style="background: #22c55e;">P</div>
+            <div class="comment-user-info">
+              <span class="comment-username">PeterMo</span>
+              <span class="comment-time">Vor 38 Minuten</span>
+            </div>
+            <span class="comment-dots">⋮</span>
+          </div>
+          <div class="comment-body">
+            Es ist alarmierend, dass zwei Drittel des Flughafenbudgets für Gehälter verwendet werden. Die Infrastruktur wurde jahrelang vernachlässigt und jetzt sieht man die Folgen.
+          </div>
+          <div class="comment-actions">
+            <a href="#" class="comment-reply-btn">💬 Antwort verfassen</a>
+            <span style="margin-left: auto; display: flex; gap: 12px;">
+              <button class="vote-btn">👍 3</button>
+              <button class="vote-btn">👎 1</button>
+            </span>
+          </div>
+        </div>
+
+        <div class="comment blurred">
+          <div class="comment-header">
+            <div class="comment-avatar-placeholder" style="background: #f59e0b;">S</div>
+            <div class="comment-user-info">
+              <span class="comment-username">StefanIBK</span>
+              <span class="comment-time">Vor 22 Minuten</span>
+            </div>
+            <span class="comment-dots">⋮</span>
+          </div>
+          <div class="comment-body">
+            Bin grad am Flughafen. Total chaotisch hier. Niemand weiss was los ist. EasyJet Schalter komplett überlastet.
+          </div>
+          <div class="comment-actions">
+            <a href="#" class="comment-reply-btn">💬 Antwort verfassen</a>
+            <span style="margin-left: auto; display: flex; gap: 12px;">
+              <button class="vote-btn">👍 8</button>
+              <button class="vote-btn">👎 0</button>
+            </span>
+          </div>
+        </div>
+
+        <!-- LOGIN OVERLAY -->
+        <div class="login-overlay">
+          <p>Die Kommentarsektion ist nur für<br>eingeloggte User sichtbar.</p>
+          <button class="login-btn">Jetzt Anmelden</button>
+        </div>
+      </div>
     </div>
   </div>
 
