@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flughafen Innsbruck nach Hangrutsch gesperrt: Alle Flüge gestrichen – VOL.AT</title>
+<meta property="og:title" content="Flughafen Innsbruck nach Hangrutsch gesperrt: Alle Flüge gestrichen">
+<meta property="og:description" content="Wegen eines massiven Hangrutsches nahe der Landebahn wurde der Flughafen Innsbruck am Dienstag bis auf Weiteres gesperrt. Hunderte Passagiere sind betroffen.">
+<meta property="og:image" content="https://images.unsplash.com/photo-1530521954074-e64f6810b32d?w=1200&h=630&fit=crop">
+<meta property="og:type" content="article">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Public+Sans:wght@700;800;900&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Inter', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #1a1603;
+    background: #ffffff;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* === TOP BLACK BAR === */
+  .service-nav {
+    background: #000;
+    padding: 0 20px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    overflow-x: auto;
+  }
+  .service-nav a {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+
+  /* === YELLOW BRAND BAR === */
+  .brand-bar {
+    background: #ffd200;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+  }
+  .brand-bar-left {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+  }
+  .brand-bar-left button {
+    background: transparent;
+    color: #1a1603;
+    border: 1px solid #000;
+    border-radius: 4px;
+    padding: 6px 8px;
+    font-family: 'Inter', Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  .logo-container {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .logo-container svg {
+    width: 140px;
+    height: auto;
+  }
+  .brand-bar-right {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .menu-icon {
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  /* === TOPIC PILLS === */
+  .topic-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 16px;
+    border-bottom: 1px solid #eee;
+    overflow-x: auto;
+  }
+  .topic-pill {
+    font-size: 14px;
+    font-weight: 500;
+    color: #1a1603;
+    text-decoration: none;
+    padding: 4px 12px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    white-space: nowrap;
+  }
+  .topic-pill.active {
+    background: #1a1603;
+    color: #fff;
+    border-color: #1a1603;
+  }
+  .live-indicator {
+    color: #ff2424;
+    font-weight: 700;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  .live-dot {
+    width: 8px;
+    height: 8px;
+    background: #ff2424;
+    border-radius: 50%;
+    display: inline-block;
+    animation: pulse 1.5s infinite;
+  }
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.4; }
+  }
+
+  /* === ARTICLE === */
+  .article-container {
+    max-width: 812px;
+    margin: 0 auto;
+    padding: 24px 16px;
+  }
+
+  .article-header {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 28px;
+  }
+
+  h1 {
+    font-family: 'Public Sans', Arial, sans-serif;
+    font-size: 42px;
+    font-weight: 900;
+    line-height: 1.07;
+    letter-spacing: -0.96px;
+    color: #1a1603;
+  }
+
+  @media (min-width: 768px) {
+    h1 { font-size: 48px; }
+  }
+
+  .article-meta {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+
+  .article-date {
+    font-size: 14px;
+    color: #555;
+  }
+  .article-date .updated {
+    color: #979797;
+  }
+
+  .article-actions {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .btn-vorlesen {
+    background: transparent;
+    color: #1a1603;
+    border: 1px solid #000;
+    border-radius: 4px;
+    padding: 8px 12px;
+    font-family: 'Inter', Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .engagement {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 16px;
+    color: #1a1603;
+  }
+  .engagement span {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+
+  /* === HERO IMAGE === */
+  .hero-image {
+    border-radius: 8px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 4px;
+  }
+
+  .image-caption {
+    font-size: 12px;
+    font-weight: 500;
+    color: #1a1603;
+    line-height: 13.8px;
+    margin-bottom: 32px;
+  }
+
+  /* === ARTICLE BODY === */
+  .article-body {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .article-body p {
+    font-family: 'Inter', Arial, sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 1.3;
+    color: #1a1603;
+    margin-top: 24px;
+  }
+
+  .article-body p:first-child {
+    margin-top: 0;
+  }
+
+  .article-body p strong {
+    font-weight: 700;
+  }
+
+  .article-body h2 {
+    font-family: 'Public Sans', Arial, sans-serif;
+    font-size: 28px;
+    font-weight: 900;
+    line-height: 31.08px;
+    letter-spacing: -0.56px;
+    color: #1a1603;
+    margin-top: 40px;
+  }
+
+  .article-body a {
+    color: #979797;
+    text-decoration: underline;
+    font-weight: 500;
+  }
+
+  /* === TAG SECTION === */
+  .article-tags {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-top: 32px;
+    padding-top: 24px;
+    border-top: 1px solid #eee;
+  }
+  .article-tag {
+    font-size: 14px;
+    font-weight: 600;
+    color: #1a1603;
+    padding: 6px 14px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    text-decoration: none;
+  }
+
+  /* === REACTION BAR === */
+  .reaction-bar {
+    margin-top: 40px;
+    padding: 24px 0;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+  }
+  .reaction-bar h3 {
+    font-family: 'Public Sans', Arial, sans-serif;
+    font-size: 28px;
+    font-weight: 900;
+    line-height: 31.08px;
+    letter-spacing: -0.56px;
+    margin-bottom: 16px;
+  }
+  .reaction-emojis {
+    display: flex;
+    gap: 12px;
+  }
+  .emoji-btn {
+    background: #f5f5f5;
+    border: 1px solid #eee;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    cursor: pointer;
+    transition: transform 0.15s;
+  }
+  .emoji-btn:hover {
+    transform: scale(1.15);
+  }
+
+  /* === INFOBOX === */
+  .infobox {
+    background: #fdf9e9;
+    border-left: 4px solid #ffd200;
+    padding: 20px 24px;
+    margin-top: 24px;
+    border-radius: 0 8px 8px 0;
+  }
+  .infobox p {
+    font-size: 18px !important;
+    margin-top: 12px !important;
+  }
+  .infobox p:first-child {
+    margin-top: 0 !important;
+    font-weight: 700;
+  }
+
+  /* === RELATED === */
+  .related {
+    margin-top: 40px;
+    padding-top: 24px;
+    border-top: 1px solid #eee;
+  }
+  .related h3 {
+    font-family: 'Public Sans', Arial, sans-serif;
+    font-size: 28px;
+    font-weight: 900;
+    margin-bottom: 16px;
+  }
+  .related-item {
+    display: flex;
+    gap: 16px;
+    padding: 16px 0;
+    border-bottom: 1px solid #eee;
+    text-decoration: none;
+    color: #1a1603;
+  }
+  .related-item:hover { background: #fdf9e9; }
+  .related-thumb {
+    width: 120px;
+    height: 80px;
+    border-radius: 8px;
+    object-fit: cover;
+    flex-shrink: 0;
+  }
+  .related-title {
+    font-family: 'Public Sans', Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 1.2;
+  }
+</style>
+</head>
+<body>
+
+<!-- TOP BLACK BAR -->
+<div class="service-nav">
+  <a href="#">Highspeed</a>
+  <a href="#">Webmail</a>
+  <a href="#">VOLMobil</a>
+  <a href="#">Job</a>
+  <a href="#">Lehre</a>
+  <a href="#">Immo</a>
+  <a href="#">Auto</a>
+  <a href="#">Anzeiger</a>
+  <a href="#">VN ePaper</a>
+</div>
+
+<!-- YELLOW BRAND BAR -->
+<div class="brand-bar" style="position: relative;">
+  <div class="brand-bar-left">
+    <button>+ testen</button>
+    <button>Tipp geben</button>
+  </div>
+  <div class="logo-container">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 107 22">
+      <rect width="107" height="22" fill="#FFD200"/>
+      <path fill="#1a1603" fill-rule="evenodd"
+        d="M13.354 21.319H8.075L.863.68h5.524l3.272 10.725 1.443 4.85h.176l1.583-4.707L16.556.68h5.173L13.354 21.32ZM46.148.681h4.96v16.85h8.48v3.788h-13.44V.68ZM61.664 19.018c0-1.45 1.161-2.762 2.745-2.762 1.653 0 2.708 1.275 2.708 2.762 0 1.309-1.09 2.584-2.709 2.584-1.583 0-2.744-1.24-2.744-2.584ZM76.335 12.576h4.61l-.528-1.842-1.408-5.098h-.175l-1.83 5.098-.669 1.842ZM76.723.68h5.031L88.65 21.32h-5.242L82 16.363h-7.003l-1.723 4.956h-4.646L76.723.68ZM87.554 1.017H106.2v3.787h-6.896v16.85h-4.961V4.804h-6.79V1.017ZM32.496 17.227c-3.419 0-6.19-2.787-6.19-6.228 0-3.438 2.771-6.227 6.19-6.227 3.418 0 6.19 2.789 6.19 6.227 0 3.44-2.772 6.228-6.19 6.228Zm0-16.935c-5.879 0-10.644 4.793-10.644 10.707 0 5.914 4.765 10.709 10.644 10.709 5.878 0 10.644-4.795 10.644-10.709S38.374.292 32.496.292Z"
+        clip-rule="evenodd" />
+    </svg>
+  </div>
+  <div class="brand-bar-right">
+    <span class="menu-icon">≡ 🔍</span>
+  </div>
+</div>
+
+<!-- TOPIC PILLS -->
+<div class="topic-bar">
+  <span class="live-indicator"><span class="live-dot"></span> LIVE</span>
+  <a href="#" class="topic-pill">Verkehr</a>
+  <a href="#" class="topic-pill active">Innsbruck</a>
+  <a href="#" class="topic-pill">Lawinenlage</a>
+  <a href="#" class="topic-pill">Blaulicht</a>
+  <a href="#" class="topic-pill">Ländlekicker LIVE</a>
+</div>
+
+<!-- ARTICLE -->
+<div class="article-container">
+  <div class="article-header">
+    <h1>Flughafen Innsbruck nach Hangrutsch gesperrt: Alle Flüge bis Freitag gestrichen</h1>
+
+    <div class="article-meta">
+      <span class="article-date">
+        1.04.2026 05:47 <span class="updated">(Akt. 1.04.2026 07:12)</span>
+      </span>
+    </div>
+
+    <div class="article-actions">
+      <button class="btn-vorlesen">🔊 Vorlesen</button>
+      <div class="engagement">
+        <span>♡ 47</span>
+        <span>💬 83</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- HERO IMAGE -->
+  <img class="hero-image" 
+    src="https://images.unsplash.com/photo-1530521954074-e64f6810b32d?w=900&h=600&fit=crop" 
+    alt="Flughafen Innsbruck Landebahn gesperrt">
+  <div class="image-caption">Ein massiver Hangrutsch hat die Landebahn des Flughafens Innsbruck unbrauchbar gemacht. ©APA/Zeitungsfoto.at, Symbolbild</div>
+
+  <!-- ARTICLE BODY -->
+  <div class="article-body">
+    <p><strong>Innsbruck</strong> Ein massiver Hangrutsch in unmittelbarer Nähe der Landebahn hat den Flughafen Innsbruck am Dienstagmorgen vollständig lahmgelegt. Wie die Betreibergesellschaft in einer Aussendung mitteilte, sind <strong>sämtliche Flüge bis einschließlich Freitag, 3. April, gestrichen</strong>. Betroffen sind unter anderem alle easyJet-Verbindungen nach Bristol, London-Gatwick und Basel.</p>
+
+    <p>Die Sperre wurde nach einer Sicherheitsinspektion in den frühen Morgenstunden verhängt. Laut dem Tiroler Landesgeologen Dr. Markus Pfurtscheller hat das anhaltende Tauwetter der vergangenen Tage den Hang oberhalb des östlichen Rollwegs destabilisiert. <strong>„Die Erdmassen haben sich über Nacht auf rund 40 Meter Breite gelöst"</strong>, so Pfurtscheller gegenüber VOL.AT.</p>
+
+    <h2>EasyJet streicht alle Innsbruck-Flüge bis Freitag</h2>
+
+    <p>Die britische Billigfluggesellschaft easyJet, die den Großteil der internationalen Verbindungen ab Innsbruck bedient, hat bereits reagiert: <strong>Alle Flüge vom 1. bis einschließlich 3. April werden ersatzlos gestrichen.</strong> Passagiere werden gebeten, sich über die easyJet-App oder die Website über ihre Optionen zu informieren.</p>
+
+    <div class="infobox">
+      <p>⚠️ Betroffene easyJet-Flüge ab Innsbruck:</p>
+      <p>• EZY2908 Innsbruck → Bristol — 2. April — <strong>GESTRICHEN</strong></p>
+      <p>• EZY4418 Innsbruck → London Gatwick — 2. April — GESTRICHEN</p>
+      <p>• EZY1894 Innsbruck → Basel — 2. April — GESTRICHEN</p>
+      <p>• EZY2906 Innsbruck → Bristol — 3. April — GESTRICHEN</p>
+      <p>• Alle weiteren Verbindungen bis inkl. 3. April</p>
+    </div>
+
+    <p>EasyJet-Sprecher James Whitfield erklärte: „Die Sicherheit unserer Passagiere hat oberste Priorität. Wir arbeiten derzeit mit dem Flughafenbetreiber zusammen, um die Lage einzuschätzen. Betroffene Passagiere haben Anspruch auf eine vollständige Rückerstattung oder kostenlose Umbuchung."</p>
+
+    <h2>Hunderte Passagiere betroffen – Chaos am Terminal</h2>
+
+    <p>Am Flughafen Innsbruck herrschte am Dienstagvormittag Chaos. Hunderte Reisende, darunter viele britische Touristen und Vorarlberger Familien auf dem Weg zu Verwandten, strandeten im Terminal. Die Flughafendirektion richtete eine Notfall-Hotline ein: <strong>+43 512 22525-100</strong>.</p>
+
+    <p>Als Alternative wird Passagieren empfohlen, auf die Flughäfen <strong>München, Zürich oder Friedrichshafen</strong> auszuweichen. Die ÖBB bieten für betroffene Fluggäste vergünstigte Zugtickets an.</p>
+
+    <h2>Geologe warnt: „Weitere Rutschungen möglich"</h2>
+
+    <p>Landesgeologe Pfurtscheller warnt zudem vor weiteren Hangbewegungen in den kommenden Tagen. „Die Schneeschmelze in Kombination mit den überdurchschnittlichen Temperaturen im März hat die Bodenverhältnisse massiv destabilisiert. Wir können eine Ausweitung der betroffenen Zone nicht ausschließen", erklärte er bei einer Pressekonferenz am Vormittag.</p>
+
+    <p>Der Flughafen Innsbruck hatte zuletzt im Winter 2024 wegen starker Schneefälle mehrere Tage gesperrt werden müssen. Die aktuelle Sperre ist jedoch die schwerste seit über zehn Jahren.</p>
+
+    <p><em>Dieser Artikel wird laufend aktualisiert.</em></p>
+  </div>
+
+  <!-- TAGS -->
+  <div class="article-tags">
+    <a href="#" class="article-tag">Innsbruck</a>
+    <a href="#" class="article-tag">Flughafen</a>
+    <a href="#" class="article-tag">easyJet</a>
+    <a href="#" class="article-tag">Hangrutsch</a>
+    <a href="#" class="article-tag">Tirol</a>
+    <a href="#" class="article-tag">Flugausfälle</a>
+  </div>
+
+  <!-- REACTION BAR -->
+  <div class="reaction-bar">
+    <h3>Deine Meinung zu diesem Artikel?</h3>
+    <div class="reaction-emojis">
+      <button class="emoji-btn">⭐</button>
+      <button class="emoji-btn">👍</button>
+      <button class="emoji-btn">😂</button>
+      <button class="emoji-btn">😢</button>
+      <button class="emoji-btn">🤔</button>
+      <button class="emoji-btn">😮</button>
+    </div>
+  </div>
+
+  <!-- RELATED -->
+  <div class="related">
+    <h3>Mehr zum Thema</h3>
+    <a href="#" class="related-item">
+      <img class="related-thumb" src="https://images.unsplash.com/photo-1436491865332-7a61a109db05?w=240&h=160&fit=crop" alt="">
+      <span class="related-title">März war in Österreich deutlich zu warm und trocken</span>
+    </a>
+    <a href="#" class="related-item">
+      <img class="related-thumb" src="https://images.unsplash.com/photo-1569154941061-e231b4725ef1?w=240&h=160&fit=crop" alt="">
+      <span class="related-title">Lawinengefahr in Tirol: Warnstufe auf „erheblich" angehoben</span>
+    </a>
+    <a href="#" class="related-item">
+      <img class="related-thumb" src="https://images.unsplash.com/photo-1556388158-158ea5ccacbd?w=240&h=160&fit=crop" alt="">
+      <span class="related-title">EasyJet-Passagiere klagen über mangelnde Information bei Flugausfällen</span>
+    </a>
+  </div>
+</div>
+
+</body>
+</html>
