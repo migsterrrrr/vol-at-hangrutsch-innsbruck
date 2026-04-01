@@ -154,6 +154,77 @@
     color: #1a1603;
   }
 
+  /* === MOBILE FIXES === */
+  @media (max-width: 600px) {
+    .service-nav {
+      display: none;
+    }
+    .brand-bar {
+      height: 44px;
+      padding: 0 12px;
+    }
+    .brand-bar-left {
+      gap: 6px;
+    }
+    .brand-bar-left button {
+      font-size: 12px;
+      padding: 4px 6px;
+    }
+    .logo-container svg {
+      width: 110px;
+    }
+    .brand-bar-right .menu-icon {
+      font-size: 16px;
+    }
+    .topic-bar {
+      padding: 10px 12px;
+      gap: 8px;
+      -webkit-overflow-scrolling: touch;
+    }
+    .topic-pill {
+      font-size: 13px;
+      padding: 3px 10px;
+    }
+    h1 {
+      font-size: 28px;
+      line-height: 1.1;
+      letter-spacing: -0.5px;
+    }
+    .article-container {
+      padding: 16px 12px;
+    }
+    .article-body p {
+      font-size: 18px;
+      line-height: 1.4;
+    }
+    .article-body h2 {
+      font-size: 22px;
+      line-height: 1.15;
+    }
+    .infobox {
+      padding: 14px 16px;
+    }
+    .infobox p {
+      font-size: 15px !important;
+    }
+    .comment-avatar {
+      width: 48px;
+      height: 48px;
+    }
+    .comment-body {
+      margin-left: 60px;
+      font-size: 15px;
+    }
+    .comment-actions {
+      margin-left: 60px;
+    }
+    .reaction-bar h3,
+    .comments-section h3,
+    .related h3 {
+      font-size: 22px;
+    }
+  }
+
   @media (min-width: 768px) {
     h1 { font-size: 48px; }
   }
